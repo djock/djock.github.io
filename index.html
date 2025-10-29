@@ -19,28 +19,14 @@
 
         .logo {
             position: absolute;
-            width: 120px;
-            height: 120px;
-            transition: filter 0.3s ease;
+            height: 80px;
         }
 
         .logo img {
-            width: 100%;
             height: 100%;
+            width: auto;
             object-fit: contain;
             filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
-        }
-
-        #info {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: white;
-            text-align: center;
-            font-size: 14px;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            z-index: 1000;
         }
     </style>
 </head>
@@ -51,10 +37,6 @@
 
     <div id="unity-logo" class="logo">
         <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-ar21.svg" alt="Unity3D">
-    </div>
-
-    <div id="info">
-        <div>Flutter and Unity3D logos bouncing like DVD screensaver</div>
     </div>
 
     <script>
@@ -133,12 +115,12 @@
         // Initialize logos
         const flutterLogo = new BouncingLogo(
             document.getElementById('flutter-logo'),
-            2.5
+            1.25
         );
 
         const unityLogo = new BouncingLogo(
             document.getElementById('unity-logo'),
-            3
+            1.5
         );
 
         // Animation loop
